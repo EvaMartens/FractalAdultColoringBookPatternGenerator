@@ -1,0 +1,16 @@
+TRANSFORM t_center ROTATION 0 TRANSLATION (0,140) SCALE 0.69
+
+TRANSFORM t_right ROTATION -45 TRANSLATION (25,70) SCALE 0.65
+
+TRANSFORM t_left ROTATION 50 TRANSLATION (-17,40) SCALE 0.75
+
+GRAPHIC g_center (0,0) (-5,135) (10,150) (0,0)
+
+GRAPHIC g_left (0,0) (-20,25) (-10,70)  (0,0)
+
+GRAPHIC g_right (0,0) (20,85) (30,55) (0,0)
+
+FRACTAL f1
+BRANCH t_center [0:2] GRAPHIC g_center
+BRANCH t_right [0:5] GRAPHIC g_right
+BRANCH t_left  [0:3] GRAPHIC g_left

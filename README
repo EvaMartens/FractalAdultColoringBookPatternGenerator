@@ -1,0 +1,36 @@
+Author: evm18/epm Eva Martens Student ID 210103410
+Resources used: Assignment specifications, module resources CS23820 and additional web-resources marked in the code
+Based of module lecturer Neal Snook's design
+*****************************************************************************************
+
+To build include the following files:
+
+main.c
+transformList.c
+branchList.c
+callStackList.c
+
+*****************************************************************************************
+This application is the final project for the module CS23820, "Programming in C/C++".
+
+The program itself reads a custom file format at a user specified location, and
+outputs a browser readable ".svg" file with the same file name as the input.
+
+The accepted file format consists of the following generic example lines
+A Transform line (numbers are variable), a Graphic Line and Fractal elements with branches
+
+*****************************************************************************************
+TRANSFORM name_in_lowercase ROTATION 0 TRANSLATION (0,0) SCALE 1.0
+
+GRAPHIC name_in_lowercase (0,25) (105,105) (25,0)
+
+FRACTAL f1
+BRANCH reference_to_Transform_Item [0:8] GRAPHIC reference_to_graphic
+BRANCH reference_to_Transform_Item [0:30] GRAPHIC reference_to_graphic
+
+*****************************************************************************************
+
+WARNING: If your specification file does not load you may have the following issue:
+- A space in the "TRANSLATION (n, n)", change to "TRANSLATION (n,n)"
+
+Most other issues should get flagged by the program
